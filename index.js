@@ -7,7 +7,6 @@ bot.on('sticker', (ctx) => ctx.reply('Стикер'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
 
 bot.on('text', (ctx) => {
-  // Explicit usage
   console.log(ctx.message)
   ctx.telegram.sendMessage(ctx.message.chat.id, `Копирую ${ctx.message.text}`)})
 
